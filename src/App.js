@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import './App.css';
 import Contact from './components/Contact';
 import DontRollBack from './components/DontRollBack';
 import Home from './components/Home';
