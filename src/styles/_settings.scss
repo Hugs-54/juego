@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "font-1";
+  src: url(../assets/fonts/BreeSerif-Regular.ttf);
+}
+
+$font-1: "font-1", sans-serif;
+
+$color-skin: #EDEFDA;
+$color-green: #15750A;
+$color-red: #D72631;
+$white: rgb(243, 243, 243);
+
+@mixin verticalCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $white;
+  font-family: $font-1;
+  // @include verticalCenter;
+}
+
+li {
+  list-style-type: none;
+}
