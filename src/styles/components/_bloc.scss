@@ -1,0 +1,22 @@
+.bloc {
+    border: solid $color-red;
+    background-color: $white;
+    display: flex;
+    padding: 40px;
+
+}
+
+img {
+    width: 500px;
+    height: auto;
+
+    flex-grow: 1;
+    vertical-align: middle;
+}
+
+p {
+    text-align: justify;
+    font-size: 15px;
+    flex-grow: 1;
+    vertical-align: middle;
+}
