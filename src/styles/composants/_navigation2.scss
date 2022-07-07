@@ -33,6 +33,17 @@
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 560px) {
+
+  .header a {
+    font-size: 15px;
+  }
+
+  .header .logo {
+    width: 50px;
+  }
+}
+
+@media screen and (max-width: 395px) {
   .header p {
     float: none;
     display: block;
