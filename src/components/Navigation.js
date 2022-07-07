@@ -4,22 +4,25 @@ import { NavLink } from "react-router-dom"
 const Navigation = () => {
     return (
         <header>
-            <div className="navigation">
-                <ul>
-                    <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" : "")}>
-                        <img src='./Logo_JueGo.png' alt='Logo Ju&Go' />
-                    </NavLink>
-                    <NavLink to="/jurassic-islas" className={(nav) => (nav.isActive ? "nav-active" : "")}>
-                        <li className='left'>Jurassic Islas</li>
-                    </NavLink>
-                    <NavLink to="/dont-roll-back" className={(nav) => (nav.isActive ? "nav-active" : "")}>
-                        <li className='left'>Don't Roll Back</li>
-                    </NavLink>
+            <div className="header">
+
+                <NavLink to="/" >
+                    <img className="logo" src='./Logo_JueGo.png' alt='Logo Ju&Go' />
+                </NavLink>
+                <NavLink to="/jurassic-islas" className={(nav) => (nav.isActive ? "nav-active" : "")}>
+                    <p>Jurassic Islas</p>
+                </NavLink>
+                <NavLink to="/dont-roll-back" className={(nav) => (nav.isActive ? "nav-active" : "")}>
+                    <p>Don't Roll Back</p>
+                </NavLink>
+                <div className='header-right'>
                     <NavLink to="/contact" className={(nav) => (nav.isActive ? "nav-active" : "")}>
-                        <li className='right'>Contact</li>
+                        <p>Contact</p>
                     </NavLink>
-                </ul>
+                </div>
+
             </div >
+
         </header>
     );
 };

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import Bloc from './Bloc';
+import Footer from './Footer';
 import Navigation from './Navigation';
 
 const JurassicIslas = () => {
@@ -11,8 +12,11 @@ const JurassicIslas = () => {
             </Helmet>
             <Navigation />
             <h1>Jurassic Islas</h1>
-            <Bloc />
-
+            <Bloc imgSrc="./Logo_JurassicIslas.png" isImgFirst={true} />
+            <Bloc imgSrc="./Logo_JueGo.png" />
+            <Bloc imgSrc="./Logo_JueGo.png" isImgFirst={true} />
+            <Bloc imgSrc="./Logo_JurassicIslas.png" />
+            <Footer />
         </div>
     );
 };

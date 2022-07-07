@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import Navigation from './Navigation';
+import Footer from './Footer';
 
 const DontRollBack = () => {
     return (
@@ -10,6 +11,7 @@ const DontRollBack = () => {
             </Helmet>
             <Navigation />
             <h1>Don't Roll Back</h1>
+            <Footer />
         </div>
     );
 };

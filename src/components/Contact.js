@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import Navigation from './Navigation';
+import Footer from './Footer';
 
 const Contact = () => {
     return (
@@ -10,6 +11,7 @@ const Contact = () => {
             </Helmet>
             <Navigation />
             <h1>Contact</h1>
+            <Footer />
         </div>
     );
 };

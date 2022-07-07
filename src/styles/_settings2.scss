@@ -12,25 +12,11 @@ $color-skin: #F2E8CF;
 $color-red: #BC4749;
 $white: rgb(243, 243, 243);
 
-/*
-@mixin verticalCenter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-*/
-
-* {
-  padding: 0;
-  margin: 0;
+li {
+  list-style-type: none;
 }
 
 body {
-
   font-family: $font-1;
-  //@include verticalCenter;
-}
-
-li {
-  list-style-type: none;
+  margin: 0;
 }
