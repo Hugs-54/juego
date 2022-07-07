@@ -1,20 +1,59 @@
 import React from 'react';
 
 const Bloc = (props) => {
+
     if (props.isImgFirst) {
-        return (
-            <div className='bloc'>
-                <Img imgSrc={props.imgSrc} />
-                <Text />
-            </div>
-        );
+
+        if (props.title) {
+            return (
+                <div className='bloc'>
+                    <div className='title'>
+                        <Title title={props.title} />
+                    </div>
+
+                    <div className='flexbox'>
+                        <Img imgSrc={props.imgSrc} />
+                        <Text />
+                    </div>
+                </div>
+            );
+        } else {
+            return (
+                <div className='bloc'>
+                    <div className='flexbox'>
+                        <Img imgSrc={props.imgSrc} />
+                        <Text />
+                    </div>
+                </div>
+            );
+        }
+
     } else {
-        return (
-            <div className='bloc'>
-                <Text />
-                <Img imgSrc={props.imgSrc} />
-            </div>
-        );
+
+        if (props.title) {
+            return (
+                <div className='bloc'>
+                    <div className='title'>
+                        <Title title={props.title} />
+                    </div>
+
+                    <div className='flexbox'>
+                        <Text />
+                        <Img imgSrc={props.imgSrc} />
+                    </div>
+                </div>
+            );
+        } else {
+            return (
+                <div className='bloc'>
+                    <div className='flexbox'>
+                        <Text />
+                        <Img imgSrc={props.imgSrc} />
+                    </div>
+                </div>
+            );
+        }
+
     }
 };
 
@@ -31,6 +70,14 @@ const Img = (props) => {
         <div>
             <img className='image' src={props.imgSrc} alt='Logo Ju&Go' />
         </div>
+    )
+}
+
+const Title = (props) => {
+    return (
+        <h1>
+            {props.title}
+        </h1>
     )
 }
 

@@ -13,8 +13,8 @@ const JurassicIslas = () => {
             <Navigation />
             <div></div>
             <h1>Jurassic Islas</h1>
-            <Bloc imgSrc="./Logo_JurassicIslas.png" isImgFirst={true} />
-            <Bloc imgSrc="./Logo_JueGo.png" />
+            <Bloc imgSrc="./Logo_JurassicIslas.png" isImgFirst={true} title="Jujurassic" />
+            <Bloc imgSrc="./Logo_JueGo.png" title="Hugorassic" />
             <Bloc imgSrc="./Logo_JueGo.png" isImgFirst={true} />
             <Bloc imgSrc="./Logo_JurassicIslas.png" />
             <Footer />
