@@ -54,7 +54,7 @@
     }
 
     .image {
-        width: 300px;
+        max-width: 300px;
 
     }
 
@@ -76,5 +76,10 @@
 
     .textBloc {
         font-size: 10px;
+    }
+
+    .image {
+        max-width: 200px;
+
     }
 }
