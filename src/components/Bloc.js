@@ -13,7 +13,7 @@ const Bloc = (props) => {
 
                     <div className='flexbox'>
                         <Img imgSrc={props.imgSrc} />
-                        <Text />
+                        <Text text={props.text} />
                     </div>
                 </div>
             );
@@ -22,7 +22,7 @@ const Bloc = (props) => {
                 <div className='bloc'>
                     <div className='flexbox'>
                         <Img imgSrc={props.imgSrc} />
-                        <Text />
+                        <Text text={props.text} />
                     </div>
                 </div>
             );
@@ -38,7 +38,7 @@ const Bloc = (props) => {
                     </div>
 
                     <div className='flexbox'>
-                        <Text />
+                        <Text text={props.text} />
                         <Img imgSrc={props.imgSrc} />
                     </div>
                 </div>
@@ -47,7 +47,7 @@ const Bloc = (props) => {
             return (
                 <div className='bloc'>
                     <div className='flexbox'>
-                        <Text />
+                        <Text text={props.text} />
                         <Img imgSrc={props.imgSrc} />
                     </div>
                 </div>
@@ -57,10 +57,12 @@ const Bloc = (props) => {
     }
 };
 
-const Text = () => {
+const Text = (props) => {
     return (
         <div className='textBloc'>
-            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nesciunt quo perferendis, quos cum, nihil suscipit unde et possimus dolorem nobis maxime expedita architecto ea corrupti. Et magni quos modi illum iste velit harum molestias nesciunt consectetur eos architecto maiores quod soluta cumque, voluptatibus numquam sint repudiandae! Neque, aut voluptate.</p>
+            <p>
+                {props.text}
+            </p>
         </div>
     )
 }
