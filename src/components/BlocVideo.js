@@ -17,7 +17,7 @@ const Bloc = (props) => {
                         <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
                             Voici <a href="./presensation_video_jurassic_islas.mp4">un lien pour télécharger la vidéo</a>.</p>
                     </video>*/}
-                    <iframe className='videoYT'
+                    <iframe title='video' className='videoYT'
                         src="https://www.youtube.com/embed/tgbNymZ7vqY">
                     </iframe>
                 </div>
