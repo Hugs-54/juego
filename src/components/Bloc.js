@@ -59,8 +59,8 @@ const Bloc = (props) => {
 
 const Text = () => {
     return (
-        <div>
-            <p className='textBloc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nesciunt quo perferendis, quos cum, nihil suscipit unde et possimus dolorem nobis maxime expedita architecto ea corrupti. Et magni quos modi illum iste velit harum molestias nesciunt consectetur eos architecto maiores quod soluta cumque, voluptatibus numquam sint repudiandae! Neque, aut voluptate.</p>
+        <div className='textBloc'>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nesciunt quo perferendis, quos cum, nihil suscipit unde et possimus dolorem nobis maxime expedita architecto ea corrupti. Et magni quos modi illum iste velit harum molestias nesciunt consectetur eos architecto maiores quod soluta cumque, voluptatibus numquam sint repudiandae! Neque, aut voluptate.</p>
         </div>
     )
 }
