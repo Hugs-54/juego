@@ -38,12 +38,13 @@
     .bloc {
         margin-bottom: 20px;
         margin-top: 20px;
+        padding-top: 30px;
+        padding-bottom: 0px;
         padding-left: 50px;
         padding-right: 50px;
     }
 
     .flexbox {
-
         display: inline;
         align-items: center;
         justify-content: center;
@@ -51,11 +52,12 @@
 
     .textBloc {
         font-size: 15px;
+        margin-bottom: 30px;
     }
 
     .image {
-        max-width: 300px;
-
+        max-width: 250px;
+        margin-bottom: 20px;
     }
 
     .divImg {
@@ -76,10 +78,18 @@
 
     .textBloc {
         font-size: 10px;
+        margin-bottom: 20px;
     }
 
     .image {
-        max-width: 200px;
+        max-width: 150px;
+        margin-bottom: 10px;
+    }
 
+    .bloc {
+        padding-top: 20px;
+        padding-bottom: 0px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
