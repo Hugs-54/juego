@@ -31,7 +31,7 @@ const Contact = () => {
                 <title>Ju&Go | Contact</title>
             </Helmet>
             <Navigation />
-            <h1>Contact</h1>
+            <h1 className='title'>Vous avez une question, une demande ou vous souhaitez rentrer en relation avec nous ? Contactez-nous avec le formulaire ci-dessous.</h1>
             <div className='divContact'>
                 <form ref={form} onSubmit={sendEmail}>
                     <div className='divInfo'>
@@ -75,7 +75,7 @@ const Contact = () => {
                             <h2>Message</h2>
                             <h2 className='labelStar'>*</h2>
                         </div>
-                        <textarea placeholder='Renseignez ici votre message.' name="message"
+                        <textarea placeholder='Renseignez votre message ici.' name="message"
                             onChange={(e) => setMessage(e.target.value)} />
                     </div>
 

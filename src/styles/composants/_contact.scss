@@ -6,13 +6,9 @@
     margin-bottom: 20px;
 }
 
-.divInfo {
-    margin-bottom: 10px;
-}
-
 .divInline {
     display: flex;
-
+    height: 60px;
 }
 
 .inputInfo,
@@ -27,7 +23,30 @@ textarea {
     border-radius: 8px;
     box-shadow: 0px 0px 5px rgba(66, 66, 66, .75);
     width: 800px;
+}
 
+@media screen and (max-width: 865px) {
+
+    .inputInfo,
+    textarea {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+
+    .inputInfo,
+    textarea {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .inputInfo,
+    textarea {
+        width: 250px;
+    }
 }
 
 textarea {
@@ -56,6 +75,7 @@ textarea:focus {
     padding: 10px 10px;
     text-shadow: 0px 1px 0px #2f6627;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .sendButton:hover {
