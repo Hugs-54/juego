@@ -4,12 +4,14 @@ import Navigation from './Navigation';
 import Footer from './Footer';
 import emailjs from '@emailjs/browser';
 import Popup from 'reactjs-popup';
+import validator from 'validator'
 
 const Contact = () => {
 
     const [last_name, setLastName] = useState();
     const [first_name, setFirstName] = useState();
     const [email, setEmail] = useState();
+    const [emailIsCorrect, setEmailIsCorrect] = useState();
     const [subject, setSubject] = useState();
     const [message, setMessage] = useState();
 
@@ -25,6 +27,17 @@ const Contact = () => {
                 console.log(error.text);
             });
     };
+
+    const validateEmail = (e) => {
+        var email = e
+
+        if (validator.isEmail(email)) {
+            setEmailIsCorrect(true)
+            setEmail(email)
+        } else {
+            setEmailIsCorrect(false)
+        }
+    }
 
     return (
         <div>
@@ -62,8 +75,12 @@ const Contact = () => {
                                 <h2>Adresse email</h2>
                                 <h2 className='labelStar'>*</h2>
                             </div>
-                            <input placeholder='Email' className='inputInfo' type="email" name="user_email"
-                                onChange={(e) => setEmail(e.target.value)} />
+                            <Popup trigger={
+                                <input placeholder='Email' className='inputInfo' type="email" name="user_email"
+                                    onChange={(e) => validateEmail(e.target.value)} />}
+                                on="focus">
+                                <SpanEmailCorrect emailIsCorrect={emailIsCorrect} />
+                            </Popup>
                         </div>
 
                         <div className='divInfo'>
@@ -94,20 +111,99 @@ const Contact = () => {
                             <label className='labelStar'>*champs obligatoires</label>
                         </div>
 
+                        <div className='divInfo'>
+                            <SpanInfoLastName last_name={last_name} />
+                            <SpanInfoFirstName first_name={first_name} />
+                            <SpanInfoEmail emailIsCorrect={emailIsCorrect} />
+                            <SpanInfoObjet subject={subject} />
+                            <SpanInfoMessage message={message} />
+                        </div>
+
                         <div className='divButton'>
                             <Popup trigger={
                                 <button className='sendButton' type="submit" value="Envoyer"
-                                    disabled={!last_name || !first_name || !email || !subject || !message}
+                                    disabled={!last_name || !first_name || !email || !subject || !message || !emailIsCorrect}
                                 >Envoyer</button>} closeOnDocumentClick modal>
                                 <div className='boxConfirmation'>Votre message a bien été envoyé.</div>
                             </Popup>
                         </div>
                     </form>
                 </div >
-            </div>
+            </div >
             <Footer />
         </div >
     );
+};
+
+const SpanEmailCorrect = (props) => {
+    if (props.emailIsCorrect) {
+        return (
+            <div>
+                <span className='spanEmailCorrect'>
+                    L'adresse email est correcte.
+                </span>
+            </div>
+        );
+    } else {
+        return (
+            <div>
+                <span className='spanEmailIncorrect'>
+                    L'adresse email est incorrecte.
+                </span>
+            </div>
+        );
+    }
+
+};
+
+const SpanInfoLastName = (props) => {
+    if (!props.last_name) {
+        return (
+            <div>
+                <span className='spanInfoMsg'>Le nom doit être renseigné.</span>
+            </div>
+        )
+    }
+};
+
+const SpanInfoFirstName = (props) => {
+    if (!props.first_name) {
+        return (
+            <div>
+                <span className='spanInfoMsg'>Le prénom doit être renseigné.</span>
+            </div>
+        )
+    }
+};
+
+const SpanInfoEmail = (props) => {
+    if (!props.emailIsCorrect) {
+        return (
+            <div>
+                <span className='spanInfoMsg'>L'adresse email est incorrecte ou non renseignée.</span>
+            </div>
+        )
+    }
+};
+
+const SpanInfoObjet = (props) => {
+    if (!props.subject) {
+        return (
+            <div>
+                <span className='spanInfoMsg'>L'objet du message doit être renseigné.</span>
+            </div>
+        )
+    }
+};
+
+const SpanInfoMessage = (props) => {
+    if (!props.message) {
+        return (
+            <div>
+                <span className='spanInfoMsg'>Le message doit être renseigné.</span>
+            </div>
+        )
+    }
 };
 
 export default Contact;
