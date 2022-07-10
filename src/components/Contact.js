@@ -108,7 +108,7 @@ const Contact = () => {
                         </div>
 
                         <div className='divInfo'>
-                            <label className='labelStar'>*champs obligatoires</label>
+                            <label id='labelChampsObli' className='labelStar'>*champs obligatoires</label>
                         </div>
 
                         <div className='divInfo'>
@@ -159,8 +159,8 @@ const SpanEmailCorrect = (props) => {
 const SpanInfoLastName = (props) => {
     if (!props.last_name) {
         return (
-            <div>
-                <span className='spanInfoMsg'>Le nom doit être renseigné.</span>
+            <div className='spanInfoMsg'>
+                <span >Le nom doit être renseigné.</span>
             </div>
         )
     }
