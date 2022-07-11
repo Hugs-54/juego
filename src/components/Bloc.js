@@ -3,57 +3,27 @@ import React from 'react';
 const Bloc = (props) => {
 
     if (props.isImgFirst) {
+        return (
+            <div className='bloc'>
+                <Title title={props.title} />
 
-        if (props.title) {
-            return (
-                <div className='bloc'>
-                    <div className='title'>
-                        <Title title={props.title} />
-                    </div>
-
-                    <div className='flexbox'>
-                        <Img imgSrc={props.imgSrc} />
-                        <Text text={props.text} />
-                    </div>
+                <div className='flexbox'>
+                    <Img imgSrc={props.imgSrc} />
+                    <Text text={props.text} />
                 </div>
-            );
-        } else {
-            return (
-                <div className='bloc'>
-                    <div className='flexbox'>
-                        <Img imgSrc={props.imgSrc} />
-                        <Text text={props.text} />
-                    </div>
-                </div>
-            );
-        }
-
+            </div>
+        );
     } else {
+        return (
+            <div className='bloc'>
+                <Title title={props.title} />
 
-        if (props.title) {
-            return (
-                <div className='bloc'>
-                    <div className='title'>
-                        <Title title={props.title} />
-                    </div>
-
-                    <div className='flexbox'>
-                        <Text text={props.text} />
-                        <Img imgSrc={props.imgSrc} />
-                    </div>
+                <div className='flexbox'>
+                    <Text text={props.text} />
+                    <Img imgSrc={props.imgSrc} />
                 </div>
-            );
-        } else {
-            return (
-                <div className='bloc'>
-                    <div className='flexbox'>
-                        <Text text={props.text} />
-                        <Img imgSrc={props.imgSrc} />
-                    </div>
-                </div>
-            );
-        }
-
+            </div>
+        );
     }
 };
 
@@ -68,19 +38,32 @@ const Text = (props) => {
 }
 
 const Img = (props) => {
-    return (
-        <div className='divImg'>
-            <img className='image' src={props.imgSrc} alt='Logo Ju&Go' />
-        </div>
-    )
+    if (props.imgSrc) {
+        return (
+            <div className='divImg'>
+                <img className='image' src={props.imgSrc} alt='Logo Ju&Go' />
+            </div>
+        )
+    } else {
+        return ""
+    }
+
 }
 
 const Title = (props) => {
-    return (
-        <h1>
-            {props.title}
-        </h1>
-    )
+    if (props.title) {
+        return (
+            <div className='title'>
+                <h1>
+                    {props.title}
+                </h1>
+            </div>
+
+        )
+    } else {
+        return ""
+    }
+
 }
 
 export default Bloc;
