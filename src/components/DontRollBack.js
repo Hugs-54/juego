@@ -16,7 +16,7 @@ const DontRollBack = () => {
                     text="Dans Don't Roll Back, vous êtes à la tête d'un parc d'attraction. Votre objectif est de construire le plus présitigieux des parcs.
                     Pour être élu parc de l'année, attribuez des incidents à vos adversaires, recrutez des assistants, enchérissez sur les attractions, boutiques et
                     décors ; et le plus important, récupérez vos gains. Attention, dans cette course personne n'est réellement votre ami !" />
-                <Bloc title="Status"
+                <Bloc title="Statut"
                     text="Pour le moment, Don't Roll Back est encore au stade d'idée. Aucun prototype n'est encore fait." />
             </div>
             <Footer />
