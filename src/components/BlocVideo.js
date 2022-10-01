@@ -18,7 +18,7 @@ const Bloc = (props) => {
                             Voici <a href="./presensation_video_jurassic_islas.mp4">un lien pour télécharger la vidéo</a>.</p>
                     </video>*/}
                     <iframe title='video' className='videoYT'
-                        src="https://www.youtube.com/embed/Cq6XeuDQ7YA">
+                        src="https://www.youtube.com/embed/GqiO7WTwzFE">
                     </iframe>
                 </div>
             </div>

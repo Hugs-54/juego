@@ -31,7 +31,7 @@ const JurassicIslas = () => {
                 <Bloc title="Status"
                     text="Après deux ans de développement, plusieurs versions du jeu et des heures de playstest et d'équilibrage, 
                     le jeu s'offre enfin un prototype final ; une version stable, équilibrée et surtout amusante. 
-                    Actuellement, le jeu est envoyé vers les maisons d'éditions susceptibles d'être intéressé. Avec comme souhait, que Jurassic Islas
+                    Actuellement, le jeu est envoyé vers les maisons d'éditions susceptibles d'être intéressées. Avec comme souhait, que Jurassic Islas
                     soit édité et commercialisé." />
             </div>
             <Footer />
