@@ -12,8 +12,8 @@ const Home = () => {
             </Helmet>
             <Navigation />
             <div>
-                <Bloc imgSrc="./Logo_JueGo.png" isImgFirst={true} title="Ju&Go"
-                    text="Ju&Go est l'association de deux frères, Julien et Hugo, dans le but de créer et de développer des jeux de sociétés.
+                <Bloc imgSrc="./LesDeuxFreres.jpg" isFramed={true} isImgFirst={true} title="Ju&Go"
+                    text="Ju&Go est l'association de deux frères, Hugo et Julien, dans le but de créer et de développer des jeux de sociétés.
                     Ju&Go mise principalement sur des jeux familiaux, stratégiques et amusants." />
                 <Bloc title="Ambitions"
                     text="A travers ses jeux, Ju&Go a pour objectif de créer des expériences mémorables, divertissantes et le plus important, amusantes.

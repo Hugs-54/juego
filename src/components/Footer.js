@@ -23,6 +23,9 @@ const Footer = () => {
                     </NavLink>
                 </div>
                 <div className='element'>
+                    <a href="mailto:juego.boardgames@gmail.com">juego.boardgames@gmail.com</a>
+                </div>
+                <div className='element'>
                     <p className='footerText'>© 2022 Ju&Go</p>
                 </div>
             </div >

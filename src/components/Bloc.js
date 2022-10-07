@@ -8,7 +8,7 @@ const Bloc = (props) => {
                 <Title title={props.title} />
 
                 <div className='flexbox'>
-                    <Img imgSrc={props.imgSrc} />
+                    <Img imgSrc={props.imgSrc} isFramed={props.isFramed} />
                     <Text text={props.text} />
                 </div>
             </div>
@@ -20,7 +20,7 @@ const Bloc = (props) => {
 
                 <div className='flexbox'>
                     <Text text={props.text} />
-                    <Img imgSrc={props.imgSrc} />
+                    <Img imgSrc={props.imgSrc} isFramed={props.isFramed} />
                 </div>
             </div>
         );
@@ -39,11 +39,19 @@ const Text = (props) => {
 
 const Img = (props) => {
     if (props.imgSrc) {
-        return (
-            <div className='divImg'>
-                <img className='image' src={props.imgSrc} alt='Logo Ju&Go' />
-            </div>
-        )
+        if (props.isFramed) {
+            return (
+                <div className='divImg'>
+                    <img className='imageFramed' src={props.imgSrc} alt={props.imgSrc} />
+                </div>
+            )
+        } else {
+            return (
+                <div className='divImg'>
+                    <img className='image' src={props.imgSrc} alt={props.imgSrc} />
+                </div>
+            )
+        }
     } else {
         return ""
     }

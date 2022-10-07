@@ -17,7 +17,7 @@ const DontRollBack = () => {
                     Pour être élu parc de l'année, attribuez des incidents à vos adversaires, recrutez des assistants, enchérissez sur les attractions, boutiques et
                     décors ; et le plus important, récupérez vos gains. Attention, dans cette course personne n'est réellement votre ami !" />
                 <Bloc title="Statut"
-                    text="Pour le moment, Don't Roll Back est encore au stade d'idée. Aucun prototype n'est encore fait." />
+                    text="Pour le moment, Don't Roll Back est au stade de développement. Le premier prototype est en cours de construction." />
             </div>
             <Footer />
         </div>

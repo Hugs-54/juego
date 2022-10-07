@@ -30,6 +30,12 @@
     max-width: 500px;
 }
 
+.imageFramed {
+    border: solid;
+    border-color: rgba($color: black, $alpha: 0.7);
+    border-width: 2px;
+}
+
 .textBloc {
     text-align: justify;
     font-size: 40px;
