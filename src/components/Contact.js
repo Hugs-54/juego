@@ -49,9 +49,8 @@ const Contact = () => {
                 <div className='divTitle'>
                     <h1 className='titleContact'>Vous avez une question, une demande ou vous souhaitez rentrer en relation avec nous ?</h1>
                     <h1 className='titleContact'>Contactez-nous via le formulaire ci-dessous.</h1>
-                    <h1 className='titleContact'>Ou via notre adresse email :&nbsp;
-                        <a href="mailto:juego.boardgames@gmail.com">juego.boardgames@gmail.com</a>
-                    </h1>
+                    <h1 className='titleContact'>Ou via notre adresse email :</h1>
+                    <a className='titleContact' href="mailto:juego.boardgames@gmail.com">juego.boardgames@gmail.com</a>
                 </div>
                 <div className='divContact'>
                     <form ref={form} onSubmit={sendEmail}>
