@@ -3,6 +3,7 @@ import Contact from './components/Contact';
 import DontRollBack from './components/DontRollBack';
 import Home from './components/Home';
 import JurassicIslas from './components/JurassicIslas';
+import UltimeVictime from './components/UltimeVictime';
 
 function App() {
   return (
