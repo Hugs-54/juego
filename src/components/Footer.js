@@ -18,6 +18,10 @@ const Footer = () => {
                         <p>Don't Roll Back</p>
                     </NavLink>
 
+                    <NavLink to="/ultime-victime" >
+                        <p>Ultime Victime</p>
+                    </NavLink>
+
                     <NavLink to="/contact">
                         <p>Contact</p>
                     </NavLink>

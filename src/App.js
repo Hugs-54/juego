@@ -11,6 +11,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/jurassic-islas" element={<JurassicIslas />} />
         <Route path="/dont-roll-back" element={<DontRollBack />} />
+        <Route path="/ultime-victime" element={<UltimeVictime />} />
         <Route path="/contact" element={<Contact />} />
 
         {/*path="*" va vers l'accueil si l'url n'est pas reconnu*/}

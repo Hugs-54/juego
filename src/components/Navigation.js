@@ -15,6 +15,9 @@ const Navigation = () => {
                 <NavLink to="/dont-roll-back" className={(nav) => (nav.isActive ? "nav-active" : "")}>
                     <p>Don't Roll Back</p>
                 </NavLink>
+                <NavLink to="/ultime-victime" className={(nav) => (nav.isActive ? "nav-active" : "")}>
+                    <p>Ultime Victime</p>
+                </NavLink>
                 <div className='header-right'>
                     <NavLink to="/contact" className={(nav) => (nav.isActive ? "nav-active" : "")}>
                         <p>Contact</p>
