@@ -1,3 +1,9 @@
+Par passion, mon frère et moi créons des jeux de sociétés. 
+Ce site permet de visualiser nos différentes créations et de nous contacter.
+
+Première utilisation de React.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
