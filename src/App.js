@@ -4,6 +4,7 @@ import DontRollBack from './components/DontRollBack';
 import Home from './components/Home';
 import JurassicIslas from './components/JurassicIslas';
 import UltimeVictime from './components/UltimeVictime';
+import MonsterSnacks from './components/MonsterSnacks';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/jurassic-islas" element={<JurassicIslas />} />
         <Route path="/dont-roll-back" element={<DontRollBack />} />
         <Route path="/ultime-victime" element={<UltimeVictime />} />
+        <Route path="/monster-snacks" element={<MonsterSnacks />} />
         <Route path="/contact" element={<Contact />} />
 
         {/*path="*" va vers l'accueil si l'url n'est pas reconnu*/}

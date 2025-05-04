@@ -1,7 +1,19 @@
-.mainDiv {
-    background-image: url(../../assets/images/background-boardgame.jpg);
+.background {
+    background-image: url(../../assets/images/fond.png); 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    //filter: blur(4px);
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+    z-index: -1;
+}
+
+.content{
+    position: relative;
+    z-index: 1;
 }
