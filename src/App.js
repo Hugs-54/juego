@@ -8,22 +8,23 @@ function App() {
   }, []);
 
   return null;
-  return (
+  {/*return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* 
+         
         <Route path="/jurassic-islas" element={<JurassicIslas />} />
         <Route path="/dont-roll-back" element={<DontRollBack />} />
         <Route path="/ultime-victime" element={<UltimeVictime />} />
         <Route path="/monster-snacks" element={<MonsterSnacks />} />
         <Route path="/contact" element={<Contact />} />
-*/}
-        {/*path="*" va vers l'accueil si l'url n'est pas reconnu*/}
+
+        {/*path="*" va vers l'accueil si l'url n'est pas reconnu
         <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
+  */}
 }
 
 export default App;
