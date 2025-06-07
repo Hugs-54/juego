@@ -5,18 +5,25 @@ import Home from './components/Home';
 import JurassicIslas from './components/JurassicIslas';
 import UltimeVictime from './components/UltimeVictime';
 import MonsterSnacks from './components/MonsterSnacks';
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    window.location.replace("https://juego-boardgames.vercel.app");
+  }, []);
+
+  return null;
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        {/* 
         <Route path="/jurassic-islas" element={<JurassicIslas />} />
         <Route path="/dont-roll-back" element={<DontRollBack />} />
         <Route path="/ultime-victime" element={<UltimeVictime />} />
         <Route path="/monster-snacks" element={<MonsterSnacks />} />
         <Route path="/contact" element={<Contact />} />
-
+*/}
         {/*path="*" va vers l'accueil si l'url n'est pas reconnu*/}
         <Route path="*" element={<Home />} />
       </Routes>

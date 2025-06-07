@@ -9,6 +9,7 @@ const Navigation = () => {
                 <NavLink to="/" >
                     <img className="logo" src='./Logo_JueGo.png' alt='Logo Ju&Go' />
                 </NavLink>
+                {/** 
                 <NavLink to="/jurassic-islas" className={(nav) => (nav.isActive ? "nav-active" : "")}>
                     <p>Jurassic Islas</p>
                 </NavLink>
@@ -22,7 +23,7 @@ const Navigation = () => {
                     <NavLink to="/contact" className={(nav) => (nav.isActive ? "nav-active" : "")}>
                         <p>Contact</p>
                     </NavLink>
-                </div>
+                </div>*/}
 
             </div >
 
